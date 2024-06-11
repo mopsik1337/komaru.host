@@ -38,12 +38,29 @@
         <link rel="icon" href="../../assets/fav.ico" sizes="192x192" />
         <link rel="apple-touch-icon-precomposed" href="../../assets/fav.ico" />
         <meta name="msapplication-TileImage" content="../../assets/fav.ico" />
+        <script>window.onload = function(){document.querySelector('.preloader').classList.add("preloader-remove");};</script>
     </head>
     <body style="background-color: #0B0616;">
         <!--[if lt IE 7]>
             <meta http-equiv="refresh" content="0; url=http://chrome.com">
         <![endif]-->
         
+        <div class="preloader">
+            <svg class="w-8 h-8 blink" width="16" height="16" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_5_45)">
+                <rect x="0.000976562" width="50" height="50" rx="25" fill="#7E18FF"/>
+                <path d="M13.5752 22.8004L44.4502 47.8629H32.0127L6.5127 26.4254V47.8629H-1.6123V1.61292H6.5127V19.4879L30.8252 1.61292H43.4502L13.5752 22.8004Z" fill="white"/>
+                <path d="M40.3837 19.5114H73.5087V1.94894H81.6337V48.1989H73.5087V27.0114H40.3837V48.1989H32.2587V1.94894H40.3837V19.5114Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_5_45">
+                <rect x="0.000976562" width="50" height="50" rx="25" fill="white"/>
+                </clipPath>
+                </defs>
+                <animate attributeName="opacity" dur="2s" values="0;1;0" repeatCount="indefinite" begin="0.1" />
+            </svg>
+        </div>
+
         <div class="">
             <header class="text-center flex flex-wrap sm:justify-start sm:flex-nowrap w-full  text-sm py-2 " style="background-color: #1A0D37;">
                 <nav class="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between" aria-label="Global">
@@ -59,7 +76,6 @@
                         <rect x="0.000976562" width="50" height="50" rx="25" fill="white"/>
                         </clipPath>
                         </defs>
-                        <!-- <animate attributeName="opacity" dur="2s" values="0;1;0" repeatCount="indefinite" begin="0.1" /> -->
                     </svg>
                   </a>
                   <div class="sm:order-3 flex items-center gap-x-2">
@@ -316,7 +332,7 @@
   </footer>
   <!-- ========== END FOOTER ========== -->
 
-
+  <script src="https://javascript.info/article/script-async-defer/long.js?speed=1"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js" integrity="sha512-HaoDYc3PGduguBWOSToNc0AWGHBi2Y432Ssp3wNIdlOzrunCtB2qq6FrhtPbo+PlbvRbyi86dr5VQx61eg/daQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
         <link rel="stylesheet" type="text/css" href="/" media="print" />
