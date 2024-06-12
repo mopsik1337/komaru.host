@@ -38,73 +38,68 @@
         <link rel="icon" href="../../assets/fav.ico" sizes="192x192" />
         <link rel="apple-touch-icon-precomposed" href="../../assets/fav.ico" />
         <meta name="msapplication-TileImage" content="../../assets/fav.ico" />
-        <script>window.onload = function(){document.querySelector('.preloader').classList.add("preloader-remove");};</script>
+        <script type="text/javascript">
+          window.onload = function(){
+            setTimeout(function(){
+              document.getElementById("fadein").remove();
+            },1000);
+          };
+        </script>
     </head>
-    <body style="background-color: #0B0616;">
+    <body style="background-color: #0B0616 !important;">
         <!--[if lt IE 7]>
             <meta http-equiv="refresh" content="0; url=http://chrome.com">
         <![endif]-->
         
-        <div class="preloader">
-            <svg class="w-8 h-8 blink" width="16" height="16" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0_5_45)">
-                <rect x="0.000976562" width="50" height="50" rx="25" fill="#7E18FF"/>
-                <path d="M13.5752 22.8004L44.4502 47.8629H32.0127L6.5127 26.4254V47.8629H-1.6123V1.61292H6.5127V19.4879L30.8252 1.61292H43.4502L13.5752 22.8004Z" fill="white"/>
-                <path d="M40.3837 19.5114H73.5087V1.94894H81.6337V48.1989H73.5087V27.0114H40.3837V48.1989H32.2587V1.94894H40.3837V19.5114Z" fill="white"/>
-                </g>
-                <defs>
-                <clipPath id="clip0_5_45">
-                <rect x="0.000976562" width="50" height="50" rx="25" fill="white"/>
-                </clipPath>
-                </defs>
-                <animate attributeName="opacity" dur="2s" values="0;1;0" repeatCount="indefinite" begin="0.1" />
-            </svg>
-        </div>
+        <div id="fadein"></div>
 
         <div class="">
-            <header class="text-center flex flex-wrap sm:justify-start sm:flex-nowrap w-full  text-sm py-2 " style="background-color: #1A0D37;">
-                <nav class="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between" aria-label="Global">
-                  <a class="flex sm:order-1 flex-none text-xl font-semibold text-white" href="#">
-                    <svg class="w-8 h-8" width="16" height="16" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_5_45)">
-                        <rect x="0.000976562" width="50" height="50" rx="25" fill="#7E18FF"/>
-                        <path d="M13.5752 22.8004L44.4502 47.8629H32.0127L6.5127 26.4254V47.8629H-1.6123V1.61292H6.5127V19.4879L30.8252 1.61292H43.4502L13.5752 22.8004Z" fill="white"/>
-                        <path d="M40.3837 19.5114H73.5087V1.94894H81.6337V48.1989H73.5087V27.0114H40.3837V48.1989H32.2587V1.94894H40.3837V19.5114Z" fill="white"/>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0_5_45">
-                        <rect x="0.000976562" width="50" height="50" rx="25" fill="white"/>
-                        </clipPath>
-                        </defs>
-                    </svg>
-                  </a>
-                  <div class="sm:order-3 flex items-center gap-x-2">
-                    <button type="button" class="sm:hidden hs-collapse-toggle p-2.5 inline-flex justify-center items-center gap-x-2 rounded-lg border  shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none bg-transparent border-neutral-700 text-white hover:bg-white/10" data-hs-collapse="#navbar-alignment" aria-controls="navbar-alignment" aria-label="Toggle navigation">
-                      <svg class="hs-collapse-open:hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
-                      <svg class="hs-collapse-open:block hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+          <header class="text-center flex flex-wrap sm:justify-start sm:flex-nowrap w-full  text-sm py-2 " style="background-color: #1A0D37;">
+              <nav class="max-w-[85rem] w-full mx-auto px-4 flex flex-wrap basis-full items-center justify-between" aria-label="Global">
+                <a class="flex sm:order-1 flex-none text-xl font-semibold text-white" href="../">
+                  <svg class="w-8 h-8" width="16" height="16" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g clip-path="url(#clip0_5_45)">
+                      <rect x="0.000976562" width="50" height="50" rx="25" fill="#7E18FF"/>
+                      <path d="M13.5752 22.8004L44.4502 47.8629H32.0127L6.5127 26.4254V47.8629H-1.6123V1.61292H6.5127V19.4879L30.8252 1.61292H43.4502L13.5752 22.8004Z" fill="white"/>
+                      <path d="M40.3837 19.5114H73.5087V1.94894H81.6337V48.1989H73.5087V27.0114H40.3837V48.1989H32.2587V1.94894H40.3837V19.5114Z" fill="white"/>
+                      </g>
+                      <defs>
+                      <clipPath id="clip0_5_45">
+                      <rect x="0.000976562" width="50" height="50" rx="25" fill="white"/>
+                      </clipPath>
+                      </defs>
+                  </svg>
+                </a>
+                <div class="sm:order-3 flex items-center gap-x-2">
+                  <button type="button" class="sm:hidden hs-collapse-toggle p-2.5 inline-flex justify-center items-center gap-x-2 rounded-lg border  shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none bg-transparent border-neutral-700 text-white hover:bg-white/10" data-hs-collapse="#navbar-alignment" aria-controls="navbar-alignment" aria-label="Toggle navigation">
+                    <svg class="hs-collapse-open:hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" x2="21" y1="6" y2="6"/><line x1="3" x2="21" y1="12" y2="12"/><line x1="3" x2="21" y1="18" y2="18"/></svg>
+                    <svg class="hs-collapse-open:block hidden flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+                  </button>
+                  <button type="button" class="button-fiolka transition duration-300 py-2 px-8 inline-flex items-center gap-x-2 text-sm font-medium border-neutral-700 hover:bg-white/10 rounded-lg border bg-transparent shadow-sm disabled:opacity-50 disabled:pointer-events-none text-white">
+                      Заказать
+                      <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M5 12h14"></path>
+                        <path d="m12 5 7 7-7 7"></path>
+                      </svg>
                     </button>
-                    <button type="button" class="button-fiolka transition duration-300 py-2 px-8 inline-flex items-center gap-x-2 text-sm font-medium border-neutral-700 hover:bg-white/10 rounded-lg border bg-transparent shadow-sm disabled:opacity-50 disabled:pointer-events-none text-white">
-                        Заказать
-                        <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                          <path d="M5 12h14"></path>
-                          <path d="m12 5 7 7-7 7"></path>
-                        </svg>
-                      </button>
+                </div>
+                <div id="navbar-alignment" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2">
+                  <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
+                    <a class="font-medium transition text-white hover:text-neutral-200" href="../../" aria-current="page">Главная</a>
+                    <a class="font-medium transition text-white hover:text-neutral-200" href="../../domains/">Домены</a>
+                    <a class="font-medium transition text-white hover:text-neutral-200" href="../../hosting/">Веб-хостинг</a>
+                    <a class="font-medium transition text-white hover:text-neutral-200" href="../../rules/">Соглашение</a>
+                    <a class="font-medium transition text-white hover:text-neutral-200" href="../../about/">О Нас</a>
+                    <a class="font-medium transition text-white hover:text-neutral-200" href="https://t.me/bitox666">Telegram</a>
+                    <a class="font-medium transition text-white hover:text-neutral-200" href="../../partner/">Сотрудничество</a>
                   </div>
-                  <div id="navbar-alignment" class="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:grow-0 sm:basis-auto sm:block sm:order-2">
-                    <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:mt-0 sm:ps-5">
-                      <a class="font-medium transition text-white hover:text-neutral-200" href="#" aria-current="page">Главная</a>
-                      <a class="font-medium transition text-white hover:text-neutral-200" href="#">Домены</a>
-                      <a class="font-medium transition text-white hover:text-neutral-200" href="#">Веб-хостинг</a>
-                      <a class="font-medium transition text-white hover:text-neutral-200" href="#">Соглашение</a>
-                      <a class="font-medium transition text-white hover:text-neutral-200" href="#">О Нас</a>
-                      <a class="font-medium transition text-white hover:text-neutral-200" href="#">Telegram</a>
-                      <a class="font-medium transition text-white hover:text-neutral-200" href="#">Сотрудничество</a>
-                    </div>
-                  </div>
-                </nav>
-                
-              </header>
+                </div>
+              </nav>
+              
+            </header>
+
+              <div class="main-content transition-fade" id="swup">
+
               <!-- Hero -->
 <div class="bg-gradient-to-b from-violet-600/10 via-transparent">
     <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-8">
@@ -121,7 +116,7 @@
   
       <!-- Title -->
       <div class="max-w-4xl text-center mx-auto">
-        <h1 data-aos="fade-up" data-aos-duration="1000" class="block font-semibold bg-gradient-to-br from-white to-violet-600/10 bg-clip-text text-transparent text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+        <h1 class="block font-semibold bg-gradient-to-br from-white to-violet-600/10 bg-clip-text text-transparent text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
             Поставь сайт на красивый домен по привлекательной цене
         </h1>
       </div>
@@ -136,13 +131,14 @@
         <a class="transition duration-200 inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 shadow-lg shadow-transparent hover:shadow-blue-700/50 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-1 focus:ring-gray-600 py-3 px-6 dark:focus:ring-offset-gray-800" href="#">
           Оформить домен
           <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path d="M9.78 18.65l.28-4.23l7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3L3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z" fill="currentColor"/></svg>
-        </a>
+        </a><br><br>
+        <p class="text-gray-500 text-center ">или <a href="../../domains/" class="underline decoration-violet-900">проверить доступность</a></p>
       </div>
+      
       <!-- End Buttons -->
     </div>
   </div>
   <!-- End Hero -->
-        </div>
 
 
         <div class="">
@@ -151,7 +147,7 @@
     <!-- Grid -->
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       <!-- Icon Block -->
-      <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true"class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-neutral-700">
+      <div class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-neutral-700">
         <!-- Icon -->
         <div class="text-white font-semibold flex justify-center items-center bg-gradient-to-br from-blue-600 to-violet-600 rounded-lg mx-24 py-2">
             .com
@@ -167,7 +163,7 @@
       <!-- End Icon Block -->
   
       <!-- Icon Block -->
-      <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true" class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-neutral-700">
+      <div class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-neutral-700">
         <!-- Icon -->
         <div class="text-white font-semibold flex justify-center items-center bg-gradient-to-br from-blue-600 to-violet-600 rounded-lg mx-24 py-2">
             .top
@@ -183,7 +179,7 @@
       <!-- End Icon Block -->
   
       <!-- Icon Block -->
-      <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100" data-aos-once="true" class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-neutral-700">
+      <div class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-neutral-700">
         <!-- Icon -->
         <div class="text-white font-semibold flex justify-center items-center bg-gradient-to-br from-blue-600 to-violet-600 rounded-lg mx-24 py-2">
             .fun
@@ -199,7 +195,7 @@
       <!-- End Icon Block -->
   
       <!-- Icon Block -->
-      <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150" data-aos-once="true" class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-neutral-700">
+      <div class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-neutral-700">
         <!-- Icon -->
         <div class="text-white font-semibold flex justify-center items-center bg-gradient-to-br from-blue-600 to-violet-600 rounded-lg mx-24 py-2">
             .ru
@@ -215,7 +211,7 @@
       <!-- End Icon Block -->
   
       <!-- Icon Block -->
-      <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true" class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-neutral-700">
+      <div class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-neutral-700">
         <!-- Icon -->
         <div class="text-white font-semibold flex justify-center items-center bg-gradient-to-br from-blue-600 to-violet-600 rounded-lg mx-24 py-2">
             .space
@@ -231,7 +227,7 @@
       <!-- End Icon Block -->
   
       <!-- Icon Block -->
-      <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="250" data-aos-once="true" class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-neutral-700">
+      <div class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-neutral-700">
         <!-- Icon -->
         <div class="text-white font-semibold flex justify-center items-center bg-gradient-to-br from-blue-600 to-violet-600 rounded-lg mx-24 py-2">
             .site
@@ -247,7 +243,7 @@
       <!-- End Icon Block -->
   
       <!-- Icon Block -->
-      <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300" data-aos-once="true" class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-neutral-700">
+      <div class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-neutral-700">
         <!-- Icon -->
         <div class="text-white font-semibold flex justify-center items-center bg-gradient-to-br from-blue-600 to-violet-600 rounded-lg mx-24 py-2">
             .net
@@ -263,7 +259,7 @@
       <!-- End Icon Block -->
   
       <!-- Icon Block -->
-      <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="350" data-aos-once="true" class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-neutral-700">
+      <div class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-neutral-700">
         <!-- Icon -->
         <div class="text-white font-semibold flex justify-center items-center bg-gradient-to-br from-blue-600 to-violet-600 rounded-lg mx-24 py-2">
             .org
@@ -283,7 +279,7 @@
   <!-- End Icon Blocks -->
         </div>
 
-
+</div>
         <!-- ========== FOOTER ========== -->
 <footer class="relative overflow-hidden mt-24 bg-gradient-to-t from-violet-600/10 to-transparent bg-violet-950/10">
     <svg class="absolute -bottom-20 start-1/2 w-[2700px] transform -translate-x-1/2" width="2745" height="488" viewBox="0 0 2745 488" fill="none" xmlns="http://www.w3.org/2000/svg">
